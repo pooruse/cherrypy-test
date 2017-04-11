@@ -5,7 +5,6 @@ from app.hello import Root
 import time
 import os
 
-'''
 p = protocol.Proocol()
 t1 = time.time()
 def mcu_polling():
@@ -16,7 +15,6 @@ def mcu_polling():
         p.rx_polling()
 th = threading.Thread(target=mcu_polling)
 th.start()
-'''
 
 app = cherrypy.tree.mount(Root(), '/app')
 
